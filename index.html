@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RenderVault Games</title>
+  <link rel="icon" type="image/x-icon" href="assets/RenderVault_Games-removebg-preview (1).png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px 0;
+      border-bottom: 1px solid #222;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ccc;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      color: #fff;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #1a1a1a, #0f0f0f);
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #f0f0f0;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+      color: #aaa;
+    }
+
+    .btn {
+      margin-top: 25px;
+      display: inline-block;
+      background: #ff5722;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e64a19;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .feature-card {
+      background-color: #1c1c1c;
+      padding: 25px;
+      border-radius: 12px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #ff9800;
+    }
+
+    .feature-card p {
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+
+    .project-highlight {
+      background: #181818;
+      border-left: 4px solid #ff5722;
+      padding: 30px;
+      margin: 30px auto;
+      border-radius: 10px;
+      max-width: 900px;
+    }
+
+    .project-highlight h3 {
+      color: #ff5722;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .project-highlight p {
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      background: #111;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 style="text-align:center; color: #ffffff;">RenderVault Games</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="games.html">Our Games</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="devblog.html">Dev Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="status.html">Studio Status</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Crafting Stories That Move Hearts 🎮</h2>
+      <p>We’re an indie studio from Tamil Nadu creating rich, emotional games inspired by real life, culture, and human connection.</p>
+      <a href="games.html" class="btn">Explore Our Games</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h3>🎯 What We Do</h3>
+      <div class="grid">
+        <div class="feature-card">
+          <h4>🎭 Deep Storytelling</h4>
+          <p>We explore emotion, memory, family, and community through cinematic gameplay and rich dialogue.</p>
+        </div>
+        <div class="feature-card">
+          <h4>🌾 Cultural Beauty</h4>
+          <p>We showcase Tamil traditions, festivals, and rural life through respectful and detailed design.</p>
+        </div>
+        <div class="feature-card">
+          <h4>🕹️ Engaging Gameplay</h4>
+          <p>Interactive storytelling, branching paths, and minigames keep players emotionally invested and curious.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-highlight">
+    <h3>🎬 Featured Game: Inabn</h3>
+    <p>
+      Set in the fictional village of <strong>Thendralpuram</strong>, <em>Inabn</em> follows a young boy’s journey through tradition, discovery, and growing up. This open-world emotional adventure blends story, culture, and interactivity like never before.
+    </p>
+    <a href="games.html" class="btn" style="margin-top: 20px;">Learn More</a>
+  </section>
+
+  <section class="project-highlight">
+    <h3>🚧 Upcoming: Project 2026</h3>
+    <p>
+      We’ve begun early scripting and concept planning for our next title. Expect something grander in scope, yet just as heartfelt. Follow our <a href="devblog.html" style="color:#ff9800;">Dev Blog</a> for updates.
+    </p>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 RenderVault Games. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
