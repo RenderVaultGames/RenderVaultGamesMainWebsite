@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://www.rendervaultgames.in/</loc>
     <priority>1.0</priority>
   </url>
+
+  <!-- About Page -->
   <url>
     <loc>https://www.rendervaultgames.in/about</loc>
     <priority>0.8</priority>
   </url>
+
+  <!-- Our Games -->
+  <url>
+    <loc>https://www.rendervaultgames.in/games</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Game: Inban -->
+  <url>
+    <loc>https://www.rendervaultgames.in/inban</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Meet the Team -->
+  <url>
+    <loc>https://www.rendervaultgames.in/team</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Dev Blog -->
+  <url>
+    <loc>https://www.rendervaultgames.in/blog</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact -->
   <url>
     <loc>https://www.rendervaultgames.in/contact</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Add more pages if needed -->
+
+  <!-- Current Status / Updates Page -->
+  <url>
+    <loc>https://www.rendervaultgames.in/status</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Sitemap (self-referencing) -->
+  <url>
+    <loc>https://www.rendervaultgames.in/sitemap.xml</loc>
+    <priority>0.3</priority>
+  </url>
 </urlset>
