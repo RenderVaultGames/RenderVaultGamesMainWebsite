@@ -13,19 +13,12 @@
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #0d0d0d;
+      background: #0d0d0d;
       color: #f5f5f5;
       line-height: 1.6;
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
     header {
       background: #111;
       padding: 1.2rem 2rem;
@@ -34,89 +27,100 @@
       align-items: center;
       border-bottom: 1px solid #222;
     }
-
     header h1 {
       color: #00e5ff;
       font-weight: 700;
       font-size: 1.5rem;
     }
-
     nav ul {
       display: flex;
       list-style: none;
       gap: 1.5rem;
     }
-
     nav a {
       color: #bbb;
       font-weight: 500;
       transition: 0.3s;
+      text-decoration: none;
     }
-
     nav a:hover, nav a.active {
-      color: #fff;
+      color: #00e5ff;
       font-weight: 600;
     }
-
     .hero {
       text-align: center;
       padding: 4rem 2rem 2rem;
       background: linear-gradient(135deg, #141414, #1c1c1c);
+      border-bottom: 2px solid #222;
     }
-
     .hero h2 {
       font-size: 2.7rem;
       color: #00e5ff;
       margin-bottom: 1rem;
     }
-
     .hero p {
       color: #aaa;
       font-size: 1.1rem;
     }
 
-    .games-section {
-      padding: 3rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
+    .games-list {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
     }
 
-    .game-card {
+    .section-title {
+      color: #00e5ff;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #222;
+      padding-bottom: 0.5rem;
+    }
+
+    .game-item {
       background: #1a1a1a;
-      border-radius: 12px;
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      box-shadow: 0 0 25px rgba(0,229,255,0.05);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
-    .game-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 6px 25px rgba(0, 229, 255, 0.2);
+    .game-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 35px rgba(0,229,255,0.2);
     }
 
-    .game-card img {
+    .game-thumb {
       width: 100%;
-      height: 200px;
+      height: 260px;
       object-fit: cover;
+      transition: transform 0.3s ease;
     }
 
-    .game-info {
+    .game-details {
       padding: 1.5rem;
     }
 
-    .game-info h3 {
-      font-size: 1.3rem;
-      color: #fff;
-      margin-bottom: 0.5rem;
+    .game-details h3 {
+      color: #00e5ff;
+      font-size: 1.8rem;
+      margin-bottom: 0.4rem;
     }
 
-    .game-info p {
-      font-size: 0.95rem;
-      color: #ccc;
-      margin-bottom: 0.8rem;
+    .tags {
+      margin: 0.4rem 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #333;
+      color: #ddd;
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-right: 0.5rem;
     }
 
     .status {
@@ -127,6 +131,13 @@
       padding: 0.3rem 0.8rem;
       border-radius: 30px;
       font-size: 0.8rem;
+      margin-top: 0.5rem;
+    }
+
+    .info-extra {
+      color: #aaa;
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
     }
 
     footer {
@@ -152,15 +163,12 @@
       color: #00e5ff;
     }
 
-    @media (max-width: 600px) {
-      header, nav ul {
-        flex-direction: column;
-        align-items: center;
+    @media (max-width: 768px) {
+      .game-details h3 {
+        font-size: 1.5rem;
       }
-
-      nav ul {
-        margin-top: 1rem;
-        gap: 1rem;
+      .game-thumb {
+        height: 200px;
       }
     }
   </style>
@@ -187,28 +195,44 @@
     <p>Emotional storytelling, local roots, and global heart.</p>
   </section>
 
-  <section class="games-section">
+  <section class="games-list">
+    <h2 class="section-title">Released & In Development</h2>
 
-    <a href="https://rendervaultgames.github.io/InbanWebsite/index.html" target="_blank" rel="noopener noreferrer">
-      <div class="game-card">
-        <img src="assets/inban.png" alt="Inabn Game Screenshot" />
-        <div class="game-info">
-          <h3>Inban</h3>
-          <p>A deeply emotional open-world story set in a Tamil Nadu village. Play as young Inban, explore traditions, festivals, and personal growth across acts, minigames, and choices.</p>
-          <span class="status">🎮 In Development</span>
-        </div>
+<a href="https://rendervaultgames.github.io/InbanWebsite/index.html" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="game-item">
+    <img src="assets/inban.png" alt="Inban Game Screenshot" class="game-thumb">
+    <div class="game-details">
+      <h3>Inban</h3>
+      <div class="tags">
+        <span class="tag">Open World</span>
+        <span class="tag">Story Rich</span>
+        <span class="tag">Adventure</span>
       </div>
-    </a>
+      <p>A deeply emotional open-world story set in a Tamil Nadu village. Play as young Inban, explore traditions, festivals, and personal growth across acts, minigames, and choices.</p>
+      <span class="status">🔥 Trending</span>
+      <span class="status">🎮 In Development</span>
+      <div class="info-extra">📅 Release: Q4 2025 | 🖥️ Platform: PC</div>
+    </div>
+  </div>
+</a>
 
-    <div class="game-card">
-      <img src="assets/project2026.png" alt="Project 2026 Screenshot" />
-      <div class="game-info">
+
+    <h2 class="section-title">Upcoming Projects</h2>
+
+    <div class="game-item">
+      <img src="assets/project2026.png" alt="Project 2026 Screenshot" class="game-thumb">
+      <div class="game-details">
         <h3>Project 2026</h3>
-        <p>Our next journey begins. Early scripting and concept development for this mysterious new title start soon. Stay tuned.</p>
-        <span class="status">🛠️ Scratch Work Starting</span>
+        <div class="tags">
+          <span class="tag">Mystery</span>
+          <span class="tag">Indie</span>
+          <span class="tag">Concept</span>
+        </div>
+        <p>Our next journey begins. Early scripting and concept development for this mysterious new title starts soon. Stay tuned for the reveal!</p>
+        <span class="status">🛠️ Concept Stage</span>
+        <div class="info-extra">📅 Planned for: 2026 | 🖥️ Platforms: TBA</div>
       </div>
     </div>
-
   </section>
 
   <footer>
